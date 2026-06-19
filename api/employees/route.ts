@@ -12,9 +12,8 @@ export async function GET(request: NextRequest) {
     const limit = searchParams.get("limit");
     const query = searchParams.get("q")?.toLowerCase() || "";
     const companyId = searchParams.get("companyId") || "";
-
+    
     let filtered = [...db.employees];
-
     // 1. Фильтрация по связанной сущности (Компания) - Требование 3.7.2
     if (companyId) {
       filtered = filtered.filter(e => e.companyId === companyId);
