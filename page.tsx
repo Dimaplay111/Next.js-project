@@ -1,6 +1,4 @@
-// app/page.tsx
 import Link from "next/link";
-
 export default function HomePage() {
   return (
     <div className="max-w-3xl mx-auto text-center py-12">
