@@ -9,7 +9,6 @@ import { Company } from "../types";
 
 export default function CompaniesListPage() {
   const [companies, setCompanies] = useState<Company[]>([]);
-  
   // Состояния фильтрации и пагинации
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);

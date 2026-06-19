@@ -10,7 +10,6 @@ import { Company, Employee } from "../types";
 export default function EmployeesListPage() {
   const [employees, setEmployees] = useState<(Employee & { company?: Company })[]>([]);
   const [companies, setCompanies] = useState<Company[]>([]);
-  
   // Состояния фильтров
   const [search, setSearch] = useState("");
   const [selectedCompany, setSelectedCompany] = useState("");

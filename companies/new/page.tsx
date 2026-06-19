@@ -7,7 +7,7 @@ import { api } from "../../lib/api";
 
 export default function NewCompanyPage() {
   const router = useRouter();
-  
+
   // Состояния полей формы
   const [formData, setFormData] = useState({
     name: "",
